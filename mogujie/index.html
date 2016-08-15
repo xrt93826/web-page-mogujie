@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery/jquery-1.7.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<nav>
+		<div id="navbar">
+			<ul>
+				<li><a href="#">注册</a></li>
+				<li><a href="#">登录</a></li>
+				<li class="splitLine myorder"><a href="#">我的订单</a></li>
+				<li class="splitLine cart"><a href="#">购物车</a></li>
+				<li class="splitLine service">
+					<a href="#">客户服务</a>
+					<div id="serviceSel">
+						<a href="#">消费者服务</a><br>
+						<a href="#">商家服务</a><br>
+						<a href="#">规则中心</a><br>
+					</div>
+				</li>
+				<li class="splitLine store">
+					<a href="#">我的小店</a>
+					<div id="storeSel">
+						<a href="#">管理后台</a><br>
+						<a href="#">商家社区</a><br>
+						<a href="#">商家培训</a><br>
+						<a href="#">市场入驻</a><br>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 搜索栏 -->
+	<div class="header">
+		<!-- logo -->
+		<div class="logo">
+			<img src="imgs/logo.png" alt="">
+		</div>
+		<!-- 搜索框 -->
+		<div class="searchwrap">
+			<div class="searchbox">
+				<div>
+					<span>搜商品</span>
+					<span>搜店铺</span>
+					<div id="searchSel">
+						<span>商品</span>
+						<span>店铺</span>
+					</div>
+					
+				</div>
+				<div>
+					<input type="text" name="" id=""></div>
+				<div>
+					<div></div>
+				</div>
+			</div>
+			<div class="keywords">
+				<span>卫衣</span>
+				<span>运动鞋</span>
+				<span>连衣裙</span>
+				<span>男外套</span>
+				<span>单鞋</span>
+				<span>斜跨包</span>
+				<span>大码女装</span>
+				<span>睡衣</span>
+				<span>打底裤</span>
+			</div>
+		</div>
+		<!-- 二维码 -->
+		<div class="qrcode">
+			<img src="imgs/qrcode.png" alt="">
+			<span>蘑菇街客户端</span>
+		</div>
+		<div id="clear"></div>
+	</div>
+
+	<!-- 菜单&banner -->	
+	<!-- 顶部菜单 -->	
+	<div class="menu_top">
+		<div>
+			<span>全部商品</span>
+			<span>团购</span>
+			<span>快抢</span>
+			<span>红人Bazaar</span>
+		</div>
+	</div>
+	<div class="menu">
+		<!-- 左侧菜单 -->
+		<div class="menu_left" id="menuLeft">
+			<div>
+				<span><a href="">上衣</a></span>
+				<span><a href="">春上新</a></span>
+				<span><a href="">时装套装</a></span>
+				<span><a href="">衬衫</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">裙子</a></span>
+				<span><a href="">春季新品</a></span>
+				<span><a href="">套装</a></span>
+				<span><a href="">连衣裙</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">裤子</a></span>
+				<span><a href="">春上新</a></span>
+				<span><a href="">打底裤</a></span>
+				<span><a href="">牛仔裤</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">内衣</a></span>
+				<span><a href="">内衣套装</a></span>
+				<span><a href="">春季睡衣</a></span>
+				<span><a href="">内裤</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">鞋子</a></span>
+				<span><a href="">早春美鞋</a></span>
+				<span><a href="">“星款”</a></span>
+				<span><a href="">小白鞋</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">男友</a></span>
+				<span><a href="">夹克</a></span>
+				<span><a href="">牛仔裤</a></span>
+				<span><a href="">早春新品</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">包包</a></span>
+				<span><a href="">春上新</a></span>
+				<span><a href="">双肩</a></span>
+				<span><a href="">斜跨</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">美妆</a></span>
+				<span><a href="">超值套装</a></span>
+				<span><a href="">面膜</a></span>
+				<span><a href="">口红</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">配饰</a></span>
+				<span><a href="">墨镜</a></span>
+				<span><a href="">棒球帽</a></span>
+				<span><a href="">项链</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">家居</a></span>
+				<span><a href="">春上新</a></span>
+				<span><a href="">四件套</a></span>
+				<span><a href="">小家具</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">母婴</a></span>
+				<span><a href="">春上新</a></span>
+				<span><a href="">童装</a></span>
+				<span><a href="">孕妇装</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">零食</a></span>
+				<span><a href="">休闲食品</a></span>
+				<span><a href="">进口美食</a></span>
+				<span><a href="">肉食</a></span>
+				<div id="clear"></div>
+			</div>
+			<div>
+				<span><a href="">百货</a></span>
+				<span><a href="">收纳盒</a></span>
+				<span><a href="">玻璃杯</a></span>
+				<span><a href="">美发棒</a></span>
+				<div id="clear"></div>
+			</div>
+		</div>
+		<!-- 右侧图 -->
+		<div class="banner">
+			<div class="banner_left">
+				<img src="imgs/adv1_715x530.jpg" alt="">
+			</div>
+			<div class="banner_right">
+				<img src="imgs/first_right1.jpg" alt="">
+				<img src="imgs/first_right2.png" alt="">
+			</div>
+		</div>
+		<div id="clear"></div>
+	</div>
+	
+	<!-- 限时抢购 -->
+	<article class="xsqg">
+		<!-- 限时快抢 -->
+		<section>
+			<div class="timer">
+				<img src="imgs/xskq.png" alt="" align="absmiddle">
+				<div>
+					<span id="hour"></span>
+					<span>:</span>
+					<span id="minute"></span>
+					<span>:</span>
+					<span id="second"></span>
+				</div>	
+			</div>
+			<div class="xsqg_pic">
+				<img src="imgs/second_1.jpg" alt="">
+			</div>
+			<div class="price">
+				<span>8元</span>
+				<span>快抢价</span>
+			</div>
+		</section>
+		<!-- 特卖团购 -->
+		<section>
+			<img src="imgs/second_2.jpg" alt="">
+		</section>
+		<!-- 剁手特卖 -->
+		<section>
+			<img src="imgs/second_3.png" alt="">
+		</section>
+		<!-- 超值9.9 -->
+		<section>
+			<img src="imgs/second_4.jpg" alt="">
+			<img src="imgs/second_5.jpg" alt="">
+		</section>
+	</article>
+
+	<!-- 品牌馆框架 -->
+	<div class="frame1">
+		<!-- 标题 -->
+		<div class="titlebar">
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+			<div class="title_center">
+				<img src="imgs/ppg.png" alt="">
+			</div>
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+		</div>
+		<!-- 左边 -->
+		<div class="frame1_left">
+			<div class="frame1_pic1"><img src="imgs/third_1.jpg" alt=""></div>
+			<div class="frame1_table1">
+				<div><img src="imgs/logo_fairy.png" alt=""></div>
+				<div><img src="imgs/logo_artm.jpg" alt=""></div>
+				<div><img src="imgs/logo_mfsj.jpg" alt=""></div>
+				<div><img src="imgs/logo_nike.jpg" alt=""></div>
+				<div><img src="imgs/logo_fair.jpg" alt=""></div>
+				<div><img src="imgs/logo_vans.jpg" alt=""></div>
+				<div><img src="imgs/logo_jcool.jpg" alt=""></div>
+				<div><img src="imgs/logo_eran.jpg" alt=""></div>
+			</div>
+		</div>
+		<!-- 中间 -->
+		<div class="frame1_center">
+			<div class="frame1_pic2"><img src="imgs/third_2.jpg" alt="" height="501"></div>
+		</div>
+		<!-- 右边 -->
+		<div class="frame1_right">
+			<table>
+				<tbody>
+					<tr>
+						<td><img src="imgs/third_item1.jpg" alt="" width="186"><p>早春上新</p></td>
+						<td><img src="imgs/third_item2.jpg" alt="" width="186"><p>针织衫</p></td>
+						<td><img src="imgs/third_item3.jpg" alt="" width="186"><p>男士衬衫</p></td>
+					</tr>
+					<tr>
+						<td><img src="imgs/third_item4.jpg" alt="" width="186"><p>休闲长裤</p></td>
+						<td><img src="imgs/third_item5.jpg" alt="" width="186"><p>牛仔长裤</p></td>
+						<td><img src="imgs/third_item6.jpg" alt="" width="186"><p>型男夹克</p></td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+		<div id="clear"></div>
+	</div>
+
+	<!-- 享瘦框架 -->
+	<div class="frame1">
+		<!-- 标题 -->
+		<div class="titlebar">
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+			<div class="title_center">
+				<img src="imgs/xs.png" alt="">
+			</div>
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+		</div>
+		<!-- 左边 -->
+		<div class="frame1_left">
+			<div class="frame1_pic1"><img src="imgs/fourth_1.jpg" alt="" width="183" height="213"></div>
+			<div class="frame1_table1">
+				<div><img src="imgs/logo_pmm.jpg" alt=""></div>
+				<div><img src="imgs/logo_nxdm.jpg" alt=""></div>
+				<div><img src="imgs/logo_qlx.jpg" alt=""></div>
+				<div><img src="imgs/logo_yzl.jpg" alt=""></div>
+				<div><img src="imgs/logo_qle.jpg" alt=""></div>
+				<div><img src="imgs/logo_dyxc.jpg" alt=""></div>
+				<div><img src="imgs/logo_pwmz.jpg" alt=""></div>
+				<div><img src="imgs/logo_lj.jpg" alt=""></div>
+			</div>
+		</div>
+		<!-- 中间 -->
+		<div class="frame1_center">
+			<div class="frame1_pic2"><img src="imgs/fourth_2.jpg" alt="" height="501"></div>
+		</div>
+		<!-- 右边 -->
+		<div class="frame1_right">
+			<table>
+				<tbody>
+					<tr>
+						<td><img src="imgs/fourth_item1.jpg" alt="" width="186"><p>韩版套装</p></td>
+						<td><img src="imgs/fourth_item2.jpg" alt="" width="186"><p>显瘦裙子</p></td>
+						<td><img src="imgs/fourth_item3.jpg" alt="" width="186"><p>卫衣</p></td>
+					</tr>
+					<tr>
+						<td><img src="imgs/fourth_item4.jpg" alt="" width="186"><p>衬衫</p></td>
+						<td><img src="imgs/fourth_item5.jpg" alt="" width="186"><p>健身产品</p></td>
+						<td><img src="imgs/fourth_item6.jpg" alt="" width="186"><p>大码T恤</p></td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+		<div id="clear"></div>
+	</div>
+
+	<!-- 红人Bazaar框架 -->
+	<div class="frame2">
+		<div class="titlebar">
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+			<div class="title_center">
+				<img src="imgs/hrbz.png" alt="">
+			</div>
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+		</div>
+		<div class="frame2_left">
+			<div class="frame2_pic"><img src="imgs/fifth_l1.jpg" alt=""></div>
+			<div class="frame2_pic"><img src="imgs/fifth_l2.jpg" alt=""></div>
+			<div class="frame2_table">
+				<table>
+					<body>
+						<tr>
+							<td>设计频道</td>
+							<td>模特频道</td>
+							<td>男友频道</td>
+						</tr>
+						<tr>
+							<td>萌妹频道</td>
+							<td>瘦身频道</td>
+							<td>中性频道</td>
+						</tr>
+						<tr>
+							<td>情趣频道</td>
+							<td>极简频道</td>
+							<td>博主频道</td>
+						</tr>
+					</body>
+				</table>
+			</div>
+		</div>
+		<div class="frame2_right">
+			<div><img src="imgs/fifth_c1.jpg" alt=""></div>
+			<div>
+				<img src="imgs/fifth_item1.jpg" alt="" align="absmiddle">
+				<div class="aside_word">
+					<span>早春感潮流外套</span>
+					<span>流行趋势早早入荷！</span>
+				</div>
+			</div>
+		</div>
+		<div class="frame2_right">
+			<div><img src="imgs/fifth_c2.jpg" alt=""></div>
+			<div>
+				<img src="imgs/fifth_item2.jpg" alt="" align="absmiddle">
+				<div class="aside_word">
+					<span>流行色热销款毛衣</span>
+					<span>针织单品持续温暖</span>
+				</div>
+			</div>
+		</div>
+		<div class="frame2_right">
+			<div><img src="imgs/fifth_c3.jpg" alt=""></div>
+			<div>
+				<img src="imgs/fifth_item3.jpg" alt="" align="absmiddle">
+				<div class="aside_word">
+					<span>清新少女感裙装</span>
+					<span>2016腿玩年秘诀~</span>
+				</div>
+			</div>
+		</div>
+		<div id="clear"></div>
+	</div>
+
+	<!-- 心水好货框架 -->
+	<div class="frame2">
+		<div class="titlebar">
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+			<div class="title_center">
+				<img src="imgs/xshh.png" alt="">
+			</div>
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+		</div>
+		<div class="frame2_left">
+			<div class="frame2_pic"><img src="imgs/sixth_l1.jpg" alt=""></div>
+			<div class="frame2_pic"><img src="imgs/sixth_l2.jpg" alt=""></div>
+			<div class="frame2_table">
+				<table>
+					<body>
+						<tr>
+							<td>最爱文具</td>
+							<td>新品服饰</td>
+							<td>暖心家居</td>
+						</tr>
+						<tr>
+							<td>潮流彩妆</td>
+							<td>安心食品</td>
+							<td>人气美鞋</td>
+						</tr>
+						<tr>
+							<td>流行包包</td>
+							<td>精致饰品</td>
+							<td>性感内衣</td>
+						</tr>
+					</body>
+				</table>
+			</div>
+		</div>
+		<div class="frame2_right">
+			<div><img src="imgs/sixth_c1.jpg" alt=""></div>
+			<div>
+				<img src="imgs/sixth_item1.jpg" alt="" align="absmiddle">
+				<div class="aside_word">
+					<span>开春必买装嫩背带裙</span>
+					<span>衣橱里不能少的少女背...</span>
+				</div>
+			</div>
+		</div>
+		<div class="frame2_right">
+			<div><img src="imgs/sixth_c2.jpg" alt=""></div>
+			<div>
+				<img src="imgs/sixth_item2.jpg" alt="" align="absmiddle">
+				<div class="aside_word">
+					<span>我是波点控</span>
+					<span>早春波点控又要发病了</span>
+				</div>
+			</div>
+		</div>
+		<div class="frame2_right">
+			<div><img src="imgs/sixth_c3.jpg" alt=""></div>
+			<div>
+				<img src="imgs/sixth_item3.jpg" alt="" align="absmiddle">
+				<div class="aside_word">
+					<span>一年四季的休闲卫衣</span>
+					<span>可以一年四季都穿的神...</span>
+				</div>
+			</div>
+		</div>
+		<div id="clear"></div>
+	</div>	
+
+	<!-- 轻时髦框架 -->
+	<div class="frame1">
+		<!-- 标题 -->
+		<div class="titlebar">
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+			<div class="title_center">
+				<img src="imgs/qsm.png" alt="">
+			</div>
+			<div class="title_side">
+				<div class="title_side_left"></div>
+				<div class="title_side_center"></div>
+				<div class="title_side_right"></div>
+			</div>
+		</div>
+		<!-- 左边 -->
+		<div class="frame1_left">
+			<div class="frame1_pic1"><img src="imgs/seventh_1.jpg" alt="" width="183" height="213"></div>
+			<div class="frame1_table1">
+				<div><img src="imgs/logo_oz.jpg" alt=""></div>
+				<div><img src="imgs/logo_omont.jpg" alt=""></div>
+				<div><img src="imgs/logo_loli.jpg" alt=""></div>
+				<div><img src="imgs/logo_emie.jpg" alt=""></div>
+				<div><img src="imgs/logo_qjlp.jpg" alt=""></div>
+				<div><img src="imgs/logo_lomo.jpg" alt=""></div>
+				<div><img src="imgs/logo_viis.jpg" alt=""></div>
+				<div><img src="imgs/logo_hello.jpg" alt=""></div>
+			</div>
+		</div>
+		<!-- 中间 -->
+		<div class="frame1_center">
+			<div class="frame1_pic2"><img src="imgs/seventh_2.jpg" alt="" height="501"></div>
+		</div>
+		<!-- 右边 -->
+		<div class="frame1_right">
+			<table>
+				<tbody>
+					<tr>
+						<td><img src="imgs/seventh_item1.jpg" alt="" width="186"><p>原创设计饰品</p></td>
+						<td><img src="imgs/seventh_item2.jpg" alt="" width="186"><p>微甜女神必buy</p></td>
+						<td><img src="imgs/seventh_item3.jpg" alt="" width="186"><p>和Misfit一起保持健康</p></td>
+					</tr>
+					<tr>
+						<td><img src="imgs/seventh_item4.jpg" alt="" width="186"><p>美食提前囤起来</p></td>
+						<td><img src="imgs/seventh_item5.jpg" alt="" width="186"><p>人手必备美鞋</p></td>
+						<td><img src="imgs/seventh_item6.gif" alt="" width="186"><p>潮流包包</p></td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+		<div id="clear"></div>
+	</div>
+	<!-- 底部 -->
+	<div class="foot">
+		<div class="footwrap">
+			<div class="foot_info">
+				<img src="imgs/logo2.png" alt="">
+				<div>
+					<p>营业执照注册号：330106000129004</p>
+					<p>增值电信业务经营许可证：浙B2-20110349</p>
+					<p>ICP备案号：浙ICP备10044327号-3</p>
+					<p>©2016 Mogujie.com 杭州卷瓜网络有限公司</p>
+				</div>
+					
+			</div>
+			<div class="foot_link">
+				<dl>
+					<dt>公司</dt>
+					<dd>关于我们</dd>
+					<dd>招聘信息</dd>
+					<dd>联系我们</dd>
+				</dl>
+				<dl>
+					<dt>消费者</dt>
+					<dd>帮助中心</dd>
+					<dd>意见反馈</dd>
+					<dd>手机版下载</dd>
+				</dl>
+				<dl>
+					<dt>免费开店</dt>
+					<dd>商家社区</dd>
+					<dd>商家入驻</dd>
+					<dd>管理后台</dd>
+					<dd>商家培训</dd>
+				</dl>
+				<dl class="identify">
+					<dt>权威认证</dt>
+					<dd class="identify1"><div></div></dd>
+					<dd class="identify2"><div></div></dd>
+					<dd class="identify3"><div></div></dd>
+				</dl>
+			</div>
+			<div id="clear"></div>
+		</div>
+		<div class="links">
+			<ul>
+				<li>友情链接：</li>
+				<li>淘粉吧</li>
+				<li>蘑菇街团购网</li>
+				<li>蘑菇街女装</li>
+				<li>蘑菇街男装</li>
+				<li>蘑菇街鞋子</li>
+				<li>蘑菇街包包</li>
+				<li>蘑菇街家居</li>
+				<li>家具网</li>
+				<li>时尚品牌网</li>
+				<li>装修</li>
+				<li>蘑菇街母婴</li>
+				<li>衣联网</li>
+				<li>播视网视频</li>
+			</ul>
+		</div>
+	</div>	
+</body>
+</html>
